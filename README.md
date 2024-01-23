@@ -1,6 +1,20 @@
 # Project go-templ-tailwind
 
-One Paragraph of project description goes here
+### To run:
+
+```bash
+npm install
+```
+
+For dev
+```bash
+make watch
+```
+
+For prod
+```bash
+make build && ./tmp/main
+```
 
 ## Getting Started
 
