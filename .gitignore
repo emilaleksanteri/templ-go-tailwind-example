@@ -24,3 +24,7 @@ tmp/
 
 # .env file
 .env
+
+# ignore js stuff eewww
+node_modules
+package-lock.json

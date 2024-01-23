@@ -1,0 +1,12 @@
+{
+  "name": "go-templ-tailwind",
+  "version": "0.0.1",
+  "description": "go templ and tailwind example",
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "scripts": {
+    "build": "tailwindcss build -o internal/static/styles/tailwind.css",
+    "watch": "tailwindcss build -o internal/static/styles/tailwind.css --watch"
+  }
+}

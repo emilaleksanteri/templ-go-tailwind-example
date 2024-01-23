@@ -2,11 +2,11 @@ package web
 
 templ HelloForm() {
 	@Base() {
-		<form hx-post="/hello" method="POST" hx-target="#hello-container">
-			<input id="name" name="name" type="text"/>
-			<button type="submit">Submit</button>
+		<form hx-post="/hello" method="POST" hx-target="#hello-container" class="py-10 flex items-stretch gap-2">
+			<input id="name" name="name" type="text" class="p-2 border-2 border-blue-500" placeholder="my name is..."/>
+			<button type="submit" class="border-2 border-blue-500 rounded-lg py-2 px-4 font-medium">Submit</button>
 		</form>
-		<div id="hello-container"></div>
+		<div class="px-4 font-bold underline italic" id="hello-container"></div>
 	}
 }
 

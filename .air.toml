@@ -4,17 +4,17 @@ tmp_dir = "tmp"
 
 [build]
   args_bin = []
-  bin = "./main"
-  cmd = "make build"
+  bin = "./tmp/main"
+  cmd = "templ generate && npm run build && go build -o ./tmp/main ./cmd/api"
   delay = 1000
   exclude_dir = ["assets", "tmp", "vendor", "testdata"]
   exclude_file = []
-  exclude_regex = ["_test.go", ".*_templ.go"]
+  exclude_regex = ["_test.go", ".*_templ.go", "tailwind.css"]
   exclude_unchanged = false
   follow_symlink = false
   full_bin = ""
   include_dir = []
-  include_ext = ["go", "tpl", "tmpl", "html", "templ"]
+  include_ext = ["go", "tpl", "tmpl", "html", "templ", "css"]
   include_file = []
   kill_delay = "0s"
   log = "build-errors.log"
@@ -25,7 +25,7 @@ tmp_dir = "tmp"
   rerun = false
   rerun_delay = 500
   send_interrupt = false
-  stop_on_error = false
+  stop_on_error = true
 
 [color]
   app = ""
